@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official apps, support, and privacy information for apps developed by Yaseen Khalaf.">
+    <title>Yaseen Apps | Support and Privacy</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --background: #07111f;
+            --card: rgba(17, 35, 58, 0.88);
+            --accent: #35d4d0;
+            --accent-secondary: #ffb84d;
+            --text: #f3f7fb;
+            --muted: #aab9c8;
+            --border: rgba(255, 255, 255, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(53, 212, 208, 0.18), transparent 34%),
+                radial-gradient(circle at bottom right, rgba(255, 184, 77, 0.14), transparent 30%),
+                var(--background);
+            line-height: 1.6;
+        }
+
+        main {
+            width: min(960px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 64px 0;
+        }
+
+        header,
+        section {
+            padding: 32px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            background: var(--card);
+            backdrop-filter: blur(16px);
+        }
+
+        h1,
+        h2 {
+            margin-top: 0;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+            font-size: clamp(2.2rem, 6vw, 4rem);
+            line-height: 1.1;
+        }
+
+        h2 {
+            color: var(--accent);
+        }
+
+        p {
+            color: var(--muted);
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 18px;
+            color: var(--background);
+            background: var(--accent-secondary);
+            border-radius: 999px;
+            font-weight: 700;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 18px;
+            margin: 8px 8px 0 0;
+            color: var(--background);
+            text-decoration: none;
+            background: var(--accent);
+            border-radius: 12px;
+            font-weight: 700;
+        }
+
+        .button.secondary {
+            color: var(--text);
+            background: transparent;
+            border: 1px solid var(--border);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+
+        .app-card {
+            padding: 20px;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .app-card h3 {
+            margin: 0 0 6px;
+        }
+
+        ol {
+            padding-left: 22px;
+            color: var(--muted);
+        }
+
+        .arabic {
+            direction: rtl;
+            text-align: right;
+        }
+
+        footer {
+            padding-top: 16px;
+            color: var(--muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <span class="tag">Independent App Developer</span>
+            <h1>Yaseen Apps</h1>
+            <p>Official apps, support resources, and privacy information from Yaseen Khalaf.</p>
+            <a class="button" href="mailto:yaseen.khalaf.ahmed@gmail.com?subject=App%20Support%20Request">
+                Contact Support
+            </a>
+            <a class="button secondary" href="#apps">View Apps</a>
+        </header>
+
+        <section id="apps">
+            <h2>Apps</h2>
+            <div class="grid">
+                <article class="app-card">
+                    <h3>wordSChallenge</h3>
+                    <p>A futuristic word adventure featuring puzzles, missions, worlds, and bosses.</p>
+                    <a href="https://yasinkhalaf.github.io/wordschallenge-privacy/">
+                        Privacy Policy
+                    </a>
+                </article>
+                <article class="app-card">
+                    <h3>More Apps Coming Soon</h3>
+                    <p>New apps and support links will be added here as they become available.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="support">
+            <h2>App Support</h2>
+            <p>
+                Need help with one of my apps? Send an email with the app name, your device model,
+                iOS version, and a short description of the issue.
+            </p>
+            <ol>
+                <li>Include the app name and the feature where the issue occurred.</li>
+                <li>Include your device model and iOS version.</li>
+                <li>Describe the steps that caused the issue and attach a screenshot if possible.</li>
+            </ol>
+            <p>
+                Support email:
+                <a href="mailto:yaseen.khalaf.ahmed@gmail.com">yaseen.khalaf.ahmed@gmail.com</a>
+            </p>
+        </section>
+
+        <section class="arabic" lang="ar">
+            <h2>دعم التطبيقات</h2>
+            <p>
+                للحصول على المساعدة، أرسل رسالة تتضمن اسم التطبيق، نوع جهازك، إصدار نظام التشغيل،
+                ووصفاً مختصراً للمشكلة.
+            </p>
+            <p>
+                بريد الدعم:
+                <a href="mailto:yaseen.khalaf.ahmed@gmail.com">yaseen.khalaf.ahmed@gmail.com</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Privacy</h2>
+            <p>
+                Each app has its own privacy policy describing the information it stores or processes
+                and the third-party services it uses.
+            </p>
+            <div class="grid">
+                <article class="app-card">
+                    <h3>wordSChallenge</h3>
+                    <a href="https://yasinkhalaf.github.io/wordschallenge-privacy/">
+                        Read Privacy Policy
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Developer Information</h2>
+            <p><strong>Developer:</strong> Yaseen Khalaf</p>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:yaseen.khalaf.ahmed@gmail.com">yaseen.khalaf.ahmed@gmail.com</a>
+            </p>
+            <p><strong>Location:</strong> United Arab Emirates</p>
+        </section>
+
+        <footer>
+            © 2026 Yaseen Khalaf. All rights reserved.
+        </footer>
+    </main>
+</body>
+</html>
